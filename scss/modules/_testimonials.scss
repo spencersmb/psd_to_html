@@ -1,0 +1,61 @@
+// ==========================================================================
+// Testimonials
+// 
+// ==========================================================================
+%quote{
+	font-family:$font-family--secondary;
+	font-size: em(21px);
+	line-height: em(21px);
+	color:$quote-color;
+	font-style: italic;
+	position:relative;
+
+	
+}
+
+%cite{
+	display:block;
+	margin-top:em(42px);
+	font-family:$font-family--secondary;
+	color:$white;
+	font-size:em(12px);
+	font-style: normal;
+}
+
+blockquote{
+
+	&.top{
+		@extend %quote;
+		margin:0 auto;
+		width:50%;
+		//padding:em(5px) 0 ;
+		@include letterpress( 1px, 1px, 1px, rgba(0,0,0, 0.5));
+
+		cite{
+			@extend %cite;
+
+			@include letterpress( 1px, 1px, 1px, rgba(0,0,0, 0.5));
+		}
+	&::before{
+		position:absolute;
+		content: url(../images/blockquote-dark-top.png);
+		width:33px;
+		height:23px;
+		left:em(-28px);
+	}
+	&::after{
+		position:absolute;
+		content: url(../images/blockquote-dark-bottom.png);
+		width:33px;
+		height:23px;
+		right:em(-32px);
+		bottom:em(62px);
+	}
+
+	}
+
+	&.left{
+		@extend %quote;
+	}
+	
+}

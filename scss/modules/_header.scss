@@ -1,0 +1,35 @@
+// ==========================================================================
+// Header
+// 
+// ==========================================================================
+
+%top__space{
+	padding: em(21px) 0;
+}
+
+.top__header{
+	@extend %top__space;
+}
+
+.logo{
+
+	a{
+		@include img-replace("logo.png", 63px, 100%);
+		background-position:left center;
+		@include text-hide();
+	}
+}
+
+.list-top-contact{
+	@include pull(right);
+	@extend %top__space;
+
+	li{
+		float:left;
+		border-right: 1px dotted palette(grey);
+		margin-right:em(21px);
+		padding-right:em(21px);
+	}
+	
+
+}

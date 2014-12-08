@@ -1,0 +1,57 @@
+// ==========================================================================
+// Icons
+// ==========================================================================
+
+%small{
+	display:inline-block;
+	width:16px;
+	height:16px;
+	margin: 0 em(10.5px) -3px 0;
+	background: url('../images/sprites.png');
+}
+
+%big{
+	display:inline-block;
+	width:42px;
+	height:42px;
+	margin: 0 em(10.5px) -3px 0;
+	background: url('../images/sprites.png');
+	margin-bottom:10px;
+}
+
+
+.icn{
+	
+	@include e(small){
+		@include m(phone){
+			@extend %small;
+			background-position:0 0;
+		}
+		@include m(envelope){
+			@extend %small;
+			background-position:-64px 0;
+		}
+		@include m(arrow-right){
+			@extend %small;
+			background-position:-128px 0;
+			margin: 0 0 -4px em(10.5px);
+		}
+	}
+
+	@include e(big){
+		@include m(ecommerce){
+			@extend %big;
+			background-position:0 -64px;
+		}
+		@include m(books){
+			@extend %big;
+			background-position:-64px -64px;
+		}
+		@include m(settings){
+			@extend %big;
+			background-position:-128px -64px;
+		}
+
+	}
+	
+}

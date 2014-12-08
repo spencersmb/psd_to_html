@@ -1,0 +1,59 @@
+// ==========================================================================
+// Buttons
+// 
+// ==========================================================================
+
+%btn{
+	display:inline-block;
+	padding: 0 1em;
+	font-family:$heading-font;
+
+	@include gradient-vertical($primary-color, darken($primary-color, 5%));
+	@include round(3px);
+	@include box-shadow(0 0 0 4px palette(grey,xx-light), inset 0 1px 2px palette(grey,xx-light));
+
+	border: 1px solid darken($cinnabar, 5%);
+	text-transform: uppercase;
+	color:$white;
+	&:hover{
+		color:$white;
+		@include gradient-vertical(lighten($primary-color, 5%), $primary-color);
+	}
+	&:active{
+		color:$white;
+		@include gradient-vertical($primary-color,lighten($primary-color, 5%));
+		@include box-shadow(0 0 0 4px palette(grey,xx-light), inset 0 1px 5px darken($primary-color,15%));
+	}
+	&:visited{
+		color:$white;
+		text-decoration: none;
+		@include box-shadow(0 0 0 4px palette(grey,xx-light), inset 0 1px 2px palette(grey,xx-light));
+	}
+	&:focus{
+		text-decoration: none;
+		outline:none;
+	}
+
+}
+
+
+
+.btn{
+
+	@include e(top-header){
+		@include pull(right);
+		@extend %btn;
+		margin-top:em(10.5px);
+		height:em(42px);
+		line-height:em(42px);
+		font-weight:bold;
+	}
+
+	@include e(form){
+		@extend %btn;
+		height:em(42px);
+		line-height:em(42px);
+		font-size: em(14px);
+		font-weight:bold;
+	}
+}

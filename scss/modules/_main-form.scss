@@ -1,0 +1,69 @@
+// ==========================================================================
+// Main form
+// 
+// ==========================================================================
+
+.section-main-form{
+	background: url("../images/pattern-dark-blue.jpg");
+	text-align:center;
+	padding:em(33px) 0 ;
+
+	h1{
+		color:$white;
+		font-size: em(42px);
+		line-height: em(80px,42px);
+		@include letterpress( 1px, 1px, 1px, rgba(0,0,0, 0.5));
+	}
+	h2{
+		color:$third-color;
+		font-size:em(26px);
+		line-height: em(42px,42px);
+		@include letterpress( 1px, 1px, 1px, rgba(0,0,0, 0.5));
+		margin-bottom: em(5px);
+	}
+
+	//inner shadow
+	//negative value for bottom border.
+	@include box-shadow(inset 0px -10px 0px rgba(0,0,0, 0.2));
+}
+
+.form__single{
+	padding:em(41px) 0;
+
+	input[type="email"],
+	input[type="text"]{
+		//width defined by the P tag 
+		height:63px;
+		width:100%;
+
+		font-size: em(21px);
+		line-height: em(31.5px);
+
+		//padding for text under button
+		padding:0 em(106px) 0 em(21px);
+		outline:none;
+		border:none;
+
+		font-family: $font-family--primary;
+		@include round(3px);
+		@include box-shadow(0 0 0 8px rgba(0,0,0, 0.15));
+	}
+	//direct descendent selector
+	//Set P tag to relative and input element inside to absolute.
+	> p {
+		margin:0 auto;
+		width:50%;
+		position: relative;
+
+		input[type="submit"]{
+			position: absolute;
+			cursor: pointer;
+
+			right:em(12px);
+			top: em(11px);
+
+			-web-kit-font-smoothing: antialiased;
+			font-smoothing: antialiased;
+		}
+	}
+}

@@ -1,0 +1,59 @@
+// ==========================================================================
+// Features Section
+// ==========================================================================
+.section__features{
+	background: url("../images/pattern-light.jpg");
+	text-align:center;
+	padding:em(90px) 0 ;
+	@include clearfix;
+	h1{
+
+	}
+
+	h2{
+
+	}
+
+}
+
+.list__features {
+	margin:em(64px) 0 em(44px) 0;
+	@include clearfix;
+
+	li{
+		background:$white;
+		border: 1px solid palette(grey, x-light);
+		@include round(3px);
+		@include box-shadow(0 0 5px 0 rgba(0,0,0, 0.1));
+		padding: em(33px) em(21px) em(21px) em(21px);
+		width:370px;
+		margin-left: 15px;
+		margin-right:15px;
+		
+		
+
+		header{
+
+			position: relative;
+			height:136px;
+
+			h3{
+				position:relative;
+				top:35%;
+				transform: translateY(-75%);
+				width:340px;
+				line-height: em(18px);
+			}
+			
+		}
+
+		> p {
+			//padding-top: 70px;
+		}
+	}
+}
+
+.link__top{
+	font-family:$font-family--secondary;
+	font-style:italic;
+}
