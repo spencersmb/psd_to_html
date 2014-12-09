@@ -8,110 +8,13 @@ Author URL: http://www.everytuesday.com/
 Version: 1.0.0
 
 *********************************************************/
+@import url("http://fonts.googleapis.com/css?family=Cabin:400,600,700,400italic,600italic,700italic");
 @import url("http://fonts.googleapis.com/css?family=Gentium+Basic:400,400italic");
 @font-face {
   font-family: 'Glyphicons Halflings';
   src: url("../fonts/bootstrap/glyphicons-halflings-regular.eot");
   src: url("../fonts/bootstrap/glyphicons-halflings-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/bootstrap/glyphicons-halflings-regular.woff") format("woff"), url("../fonts/bootstrap/glyphicons-halflings-regular.ttf") format("truetype"), url("../fonts/bootstrap/glyphicons-halflings-regular.svg#glyphicons_halflingsregular") format("svg");
 }
-
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-* {
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-}
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-  margin: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
-  font-weight: normal;
-}
-
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
-  display: block;
-}
-
-h1 {
-  font-family: Helvetica, Arial, sans-serif;
-  font-size: 14px;
-  color: #3b5568;
-}
-h2, h3 {
-  font-family: "Cabin", Helvetica, Arial, sans-serif;
-  font-weight: 100;
-  font-size: 1.5em;
-  color: #6694b4;
-}
-
-h4 {
-  font-family: "Cabin", Helvetica, Arial, sans-serif;
-  font-size: 1.14286em;
-}
-
-h5 {
-  font-family: "Cabin", Helvetica, Arial, sans-serif;
-  font-size: 1em;
-}
-
-body {
-  font-family: "Cabin", Helvetica, Arial, sans-serif;
-  font-size: 14px;
-  line-height: 1.5;
-}
-
-ol, ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-blockquote, q {
-  quotes: none;
-}
-
-blockquote:before, blockquote:after,
-q:before, q:after {
-  content: '';
-  content: none;
-}
-
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-
-p {
-  margin-bottom: 1.5em;
-}
-
-a {
-  color: #ea492c;
-  text-decoration: none;
-}
-a:hover {
-  color: palettes(gray);
-  text-decoration: none;
-}
-
-
 .glyphicon {
   position: relative;
   top: 1px;
@@ -4128,6 +4031,91 @@ a.thumbnail.active {
     display: none !important;
   }
 }
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+* {
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+h4 {
+  font-family: "Cabin", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 1.14286em;
+}
+
+h5 {
+  font-family: "Cabin", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 1em;
+}
+
+body {
+  font-family: "Cabin", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.5;
+  -web-kit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+}
+
+ol, ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+p {
+  margin-bottom: 1.5em;
+}
+
+a {
+  color: #ea492c;
+  text-decoration: none;
+}
+a:hover {
+  color: palettes(gray);
+  text-decoration: none;
+}
 
 .container {
   padding-left: 0;
@@ -4162,12 +4150,22 @@ a.thumbnail.active {
   padding-right: 1.5em;
 }
 
+h1 {
+  font-family: "Cabin", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 36px;
+  color: #3b5568;
+}
 
+h2, h3 {
+  font-family: "Cabin", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 1.5em;
+  color: #6694b4;
+}
 
 .btn__top-header, .btn__form {
   display: inline-block;
   padding: 0 1em;
-  font-family: "Cabin", Helvetica, Arial, sans-serif;
+  font-family: "Cabin", "Helvetica Neue", Helvetica, Arial, sans-serif;
   background-image: -webkit-linear-gradient(top, #ea492c 0%, #e63617 100%);
   background-image: -o-linear-gradient(top, #ea492c 0%, #e63617 100%);
   background-image: linear-gradient(to bottom, #ea492c 0%, #e63617 100%);
@@ -4272,15 +4270,15 @@ a.thumbnail.active {
 }
 .section-main-form h1 {
   color: white;
-  font: 42px/1.5em "Cabin", Helvetica, Arial, sans-serif;
-  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+  font-size: 3em;
+  line-height: 1.90476em;
+  text-shadow: 1px, 1px, 1px, rgba(0, 0, 0, 0.5);
 }
 .section-main-form h2 {
   color: #3694b7;
   font-size: 1.85714em;
   line-height: 1em;
   text-shadow: 1px, 1px, 1px, rgba(0, 0, 0, 0.5);
-  -webkit-text-shadow: 1px, 1px, 1px, rgba(0, 0, 0, 0.5);
   margin-bottom: 0.35714em;
 }
 
@@ -4296,7 +4294,7 @@ a.thumbnail.active {
   padding: 0 7.57143em 0 1.5em;
   outline: none;
   border: none;
-  font-family: "Cabin", Helvetica, Arial, sans-serif;
+  font-family: "Cabin", "Helvetica Neue", Helvetica, Arial, sans-serif;
   border-radius: 3px;
   -moz-border-radius: 3px;
   -webkit-border-radius: 3px;
@@ -4332,20 +4330,17 @@ blockquote.top cite {
   margin-top: 3em;
   font-family: "Gentium Basic", Georgia, Serif;
   color: white;
-  font-size: 21px;
-  font-style: italic;
-  line-height: 1.5em;
+  font-size: 0.85714em;
+  font-style: normal;
 }
 
 blockquote.top {
   margin: 0 auto;
   width: 50%;
   text-shadow: 1px, 1px, 1px, rgba(0, 0, 0, 0.5);
-  -webkit-text-shadow: 1px, 1px, 1px, rgba(0, 0, 0, 0.5);
 }
 blockquote.top cite {
   text-shadow: 1px, 1px, 1px, rgba(0, 0, 0, 0.5);
-  -webkit-text-shadow: 1px, 1px, 1px, rgba(0, 0, 0, 0.5);
 }
 blockquote.top::before {
   position: absolute;
@@ -4374,13 +4369,6 @@ blockquote.top::after {
 }
 .section__features:after {
   clear: both;
-}
-
-.section__features h1{
-  font-size: 36px;
-  font-family: "Cabin",helvetica;
-  font-weight: 100;
-  text-shadow: 1px 1px 1px rgba(255, 255, 255, 1);
 }
 
 .list__features {
@@ -4414,10 +4402,7 @@ blockquote.top::after {
 .list__features li header h3 {
   position: relative;
   top: 35%;
-  -webkit-transform: translate(0, -75%);
-  -ms-transform: translate(0, -75%);
-  -o-transform: translate(0, -75%);
-  transform: translate(0, -75%);
+  transform: translateY(-75%);
   width: 340px;
   line-height: 1.28571em;
 }
@@ -4425,46 +4410,4 @@ blockquote.top::after {
 .link__top {
   font-family: "Gentium Basic", Georgia, Serif;
   font-style: italic;
-}
-
-.section__desc {
-  background: url("../images/pattern-black.jpg");
-  text-align: center;
-  padding: 2.35714em 0;
-}
-.section__desc h1 {
-  color: white;
-  font-size: 2.57143em;
-  line-height: 2.28571em;
-}
-.section__desc h2 {
-  font-size: 1.5em;
-  font-weight: 100;
-}
-
-.list__desc {
-  margin: 4.5em 0;
-}
-.list__desc:before, .list__desc:after {
-  content: " ";
-  display: table;
-}
-.list__desc:after {
-  clear: both;
-}
-.list__desc li {
-  color: white;
-  text-align: left;
-}
-.list__desc li h3 {
-  margin-bottom: 1.5em;
-}
-.list__desc li h3, .list__desc li p {
-  margin-left: 63px;
-}
-.list__desc li p {
-  font-family: "Cabin", Helvetica, Arial, sans-serif;
-}
-.list__desc li span[class^="icn__big"] {
-  float: left;
 }

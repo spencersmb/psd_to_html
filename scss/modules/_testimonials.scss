@@ -17,11 +17,9 @@
 	display:block;
 	margin-top:em(42px);
 	font-family:$font-family--secondary;
-	$font-weight--thin: 100;
 	color:$white;
-	font-size:21px;
-	font-style: italic;
-	line-height: 1.5em;
+	font-size:em(12px);
+	font-style: normal;
 }
 
 blockquote{
