@@ -10,9 +10,10 @@
 
 	h1{
 		color:$white;
-		font-size: em(42px);
-		line-height: em(80px,42px);
-		@include letterpress( 1px, 1px, 1px, rgba(0,0,0, 0.5));
+		font: 42px/1.5em "Cabin", Helvetica, Arial, sans-serif;
+
+		text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+		//@include letterpress( 1px, 1px, 1px, rgba(0,0,0, 0.5));
 	}
 	h2{
 		color:$third-color;

@@ -1,0 +1,49 @@
+// ==========================================================================
+// Description Section
+// ==========================================================================
+.section__desc{
+	background: url("../images/pattern-black.jpg");
+	text-align:center;
+	padding:em(33px) 0 ;
+
+	h1{
+		color:$white;
+		font-size: em(36px);
+		line-height: em(32px);
+	}
+
+	h2{
+
+		font-size: em(21px);
+		font-weight: $font-weight--thin;
+	}
+
+}
+
+.list__desc{
+	margin:em(63px) 0 ;
+	@include clearfix;
+
+	li{
+		color:$white;
+		text-align: left;
+
+		h3 {
+			margin-bottom: em(21px);
+		}
+
+		h3,p {
+			margin-left: 63px;
+		}
+
+		p{
+
+			font-family: $font-family--primary;
+		}
+
+		span[class^="icn__big"] {
+			float:left;
+		}
+
+	}
+}

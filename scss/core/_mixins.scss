@@ -47,4 +47,5 @@
 
 @mixin letterpress($x: 0, $y: 0, $blur: 1px, $color: #000){
     text-shadow:$x, $y, $blur, $color;
+    -webkit-text-shadow:$x, $y, $blur, $color;
 }

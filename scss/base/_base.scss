@@ -27,6 +27,7 @@ time, mark, audio, video {
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
+	font-weight: normal;
 }
 
 /* HTML5 display-role reset for older browsers */
@@ -36,7 +37,10 @@ footer, header, hgroup, menu, nav, section {
 }
 
 h1{
-	@extend %hdln-prim;
+	//@extend %hdln-prim;
+	  font-family: $font-family--primary;
+  font-size: 36px;
+    color: $secondary-color;
 }
 
 h2 {
@@ -61,8 +65,7 @@ body {
 	font-family: $heading-font;
 	font-size: $base__font-size;
 	line-height: ($base__line/$base__font-size);
-	-web-kit-font-smoothing: antialiased;
-	font-smoothing: antialiased;	
+	font-weight: normal;	
 }
 ol, ul {
 	margin:0;
