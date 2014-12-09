@@ -9,6 +9,7 @@
 	color:$quote-color;
 	font-style: italic;
 	position:relative;
+	-webkit-font-smoothing: antialiased;
 
 	
 }
@@ -20,6 +21,7 @@
 	color:$white;
 	font-size:em(12px);
 	font-style: normal;
+	-webkit-font-smoothing: antialiased;
 }
 
 blockquote{

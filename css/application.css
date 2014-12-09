@@ -4079,8 +4079,7 @@ body {
   font-family: "Cabin", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 14px;
   line-height: 1.5;
-  -web-kit-font-smoothing: antialiased;
-  font-smoothing: antialiased;
+  -webkit-font-smoothing: antialiased;
 }
 
 ol, ul {
@@ -4154,18 +4153,21 @@ h1 {
   font-family: "Cabin", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 36px;
   color: #3b5568;
+  -webkit-font-smoothing: antialiased;
 }
 
 h2, h3 {
   font-family: "Cabin", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 1.5em;
   color: #6694b4;
+  -webkit-font-smoothing: antialiased;
 }
 
 .btn__top-header, .btn__form {
   display: inline-block;
   padding: 0 1em;
   font-family: "Cabin", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
   background-image: -webkit-linear-gradient(top, #ea492c 0%, #e63617 100%);
   background-image: -o-linear-gradient(top, #ea492c 0%, #e63617 100%);
   background-image: linear-gradient(to bottom, #ea492c 0%, #e63617 100%);
@@ -4323,6 +4325,7 @@ blockquote.top, blockquote.left {
   color: #2894d8;
   font-style: italic;
   position: relative;
+  -webkit-font-smoothing: antialiased;
 }
 
 blockquote.top cite {
@@ -4332,6 +4335,7 @@ blockquote.top cite {
   color: white;
   font-size: 0.85714em;
   font-style: normal;
+  -webkit-font-smoothing: antialiased;
 }
 
 blockquote.top {
@@ -4410,4 +4414,45 @@ blockquote.top::after {
 .link__top {
   font-family: "Gentium Basic", Georgia, Serif;
   font-style: italic;
+}
+
+.section__desc {
+  background: url("../images/pattern-black.jpg");
+  text-align: center;
+  padding: 4.28571em 0;
+}
+.section__desc:before, .section__desc:after {
+  content: " ";
+  display: table;
+}
+.section__desc:after {
+  clear: both;
+}
+.section__desc h1 {
+  font-size: 2.57143em;
+  color: white;
+  line-height: 84px;
+}
+
+.desc__list {
+  margin: 4.57143em 0 0.28571em 0;
+  color: white;
+}
+.desc__list:before, .desc__list:after {
+  content: " ";
+  display: table;
+}
+.desc__list:after {
+  clear: both;
+}
+.desc__list li {
+  text-align: left;
+  margin-bottom: 3.28571em;
+}
+.desc__list span {
+  float: left;
+}
+.desc__list p, .desc__list h3 {
+  margin-left: 63px;
+  margin-bottom: 10px;
 }

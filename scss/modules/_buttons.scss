@@ -7,6 +7,7 @@
 	display:inline-block;
 	padding: 0 1em;
 	font-family:$heading-font;
+	-webkit-font-smoothing: antialiased;
 
 	@include gradient-vertical($primary-color, darken($primary-color, 5%));
 	@include round(3px);

@@ -61,8 +61,7 @@ body {
 	font-family: $heading-font;
 	font-size: $base__font-size;
 	line-height: ($base__line/$base__font-size);
-	-web-kit-font-smoothing: antialiased;
-	font-smoothing: antialiased;	
+	-webkit-font-smoothing: antialiased;	
 }
 ol, ul {
 	margin:0;

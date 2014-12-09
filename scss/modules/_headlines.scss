@@ -15,6 +15,7 @@
   //map-get(map-get($palettes, grey), x-dark);
   color: $secondary-color;
   //margin-top:0;
+  -webkit-font-smoothing: antialiased;
 }
 
 %hdln-sec{
@@ -24,6 +25,7 @@
   color: $h2-blue;
   //line-height: (42px / 21px);
   //letter-spacing: $letter-space;
+  -webkit-font-smoothing: antialiased;
 }
 
 // .headline {
