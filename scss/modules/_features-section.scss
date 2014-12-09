@@ -40,7 +40,7 @@
 			h3{
 				position:relative;
 				top:35%;
-				transform: translateY(-75%);
+				@include translateY(-75%);
 				width:340px;
 				line-height: em(18px);
 			}

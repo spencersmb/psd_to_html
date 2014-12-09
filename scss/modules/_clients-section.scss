@@ -1,0 +1,27 @@
+// ==========================================================================
+// Client Section
+// 
+// ==========================================================================
+
+.section__clients{
+	background-color: $white;
+	text-align: center;
+	padding: em(63px) 0 ;
+
+	h1{
+		line-height: 84px;
+	}
+}
+
+.list__clients{
+
+	li{
+		display:inline-block;
+		float: left;
+		text-align: left;
+
+		img{
+			margin:0 21px 21px 21px;
+		}
+	}
+}

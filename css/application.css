@@ -918,6 +918,8 @@ hr {
   margin-bottom: 20px;
   border: 0;
   border-top: 1px solid #eeeeee;
+  /*spencers add to scaffolding*/
+  margin: 4.5em 0;
 }
 
 .sr-only {
@@ -4328,7 +4330,7 @@ blockquote.top, blockquote.left {
   -webkit-font-smoothing: antialiased;
 }
 
-blockquote.top cite {
+blockquote.top cite, blockquote.left cite {
   display: block;
   margin-top: 3em;
   font-family: "Gentium Basic", Georgia, Serif;
@@ -4359,6 +4361,30 @@ blockquote.top::after {
   width: 33px;
   height: 23px;
   right: -2.28571em;
+  bottom: 4.42857em;
+}
+blockquote.left {
+  margin: 0 3em;
+  width: 300px;
+  text-shadow: 1px, 1px, 1px, rgba(0, 0, 0, 0.5);
+}
+blockquote.left cite {
+  color: #797e83;
+  text-shadow: 1px, 1px, 1px, rgba(0, 0, 0, 0.5);
+}
+blockquote.left::before {
+  position: absolute;
+  content: url(../images/blockquote-light-top.png);
+  width: 33px;
+  height: 23px;
+  left: -2.71429em;
+}
+blockquote.left::after {
+  position: absolute;
+  content: url(../images/blockquote-light-bottom.png);
+  width: 33px;
+  height: 23px;
+  right: -3em;
   bottom: 4.42857em;
 }
 
@@ -4406,6 +4432,9 @@ blockquote.top::after {
 .list__features li header h3 {
   position: relative;
   top: 35%;
+  -webkit-transform: translateY(-75%);
+  -ms-transform: translateY(-75%);
+  -o-transform: translateY(-75%);
   transform: translateY(-75%);
   width: 340px;
   line-height: 1.28571em;
@@ -4455,4 +4484,22 @@ blockquote.top::after {
 .desc__list p, .desc__list h3 {
   margin-left: 63px;
   margin-bottom: 10px;
+}
+
+.section__clients {
+  background-color: white;
+  text-align: center;
+  padding: 4.5em 0;
+}
+.section__clients h1 {
+  line-height: 84px;
+}
+
+.list__clients li {
+  display: inline-block;
+  float: left;
+  text-align: left;
+}
+.list__clients li img {
+  margin: 0 21px 21px 21px;
 }

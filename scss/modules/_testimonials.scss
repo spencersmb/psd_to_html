@@ -38,26 +38,50 @@ blockquote{
 
 			@include letterpress( 1px, 1px, 1px, rgba(0,0,0, 0.5));
 		}
-	&::before{
-		position:absolute;
-		content: url(../images/blockquote-dark-top.png);
-		width:33px;
-		height:23px;
-		left:em(-28px);
-	}
-	&::after{
-		position:absolute;
-		content: url(../images/blockquote-dark-bottom.png);
-		width:33px;
-		height:23px;
-		right:em(-32px);
-		bottom:em(62px);
-	}
+		&::before{
+			position:absolute;
+			content: url(../images/blockquote-dark-top.png);
+			width:33px;
+			height:23px;
+			left:em(-28px);
+		}
+		&::after{
+			position:absolute;
+			content: url(../images/blockquote-dark-bottom.png);
+			width:33px;
+			height:23px;
+			right:em(-32px);
+			bottom:em(62px);
+		}
 
-	}
+	} //end top
 
 	&.left{
 		@extend %quote;
-	}
+		margin:0 em(42px);
+		width:300px;
+		@include letterpress( 1px, 1px, 1px, rgba(0,0,0, 0.5));
+		
+		cite{
+			@extend %cite;
+			color: palette(grey);
+			@include letterpress( 1px, 1px, 1px, rgba(0,0,0, 0.5));
+		}
+		&::before{
+			position:absolute;
+			content: url(../images/blockquote-light-top.png);
+			width:33px;
+			height:23px;
+			left:em(-38px);
+		}
+		&::after{
+			position:absolute;
+			content: url(../images/blockquote-light-bottom.png);
+			width:33px;
+			height:23px;
+			right:em(-42px);
+			bottom:em(62px);
+		}
+	} //end left
 	
 }

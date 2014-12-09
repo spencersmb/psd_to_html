@@ -115,6 +115,9 @@ hr {
   margin-bottom: $line-height-computed;
   border: 0;
   border-top: 1px solid $hr-border;
+
+  /*spencers add to scaffolding*/
+  margin: em(63px) 0 ;
 }
 
 
