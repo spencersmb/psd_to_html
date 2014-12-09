@@ -27,6 +27,8 @@ time, mark, audio, video {
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
+	font-family: helvetica;
+	font-weight: normal;
 }
 
 /* HTML5 display-role reset for older browsers */
@@ -36,15 +38,24 @@ footer, header, hgroup, menu, nav, section {
 }
 
 h1{
-	@extend %hdln-prim;
+	//@extend %hdln-prim;
+	font-size:em(36px);	
+	font-family: $font-family--primary;
+	color:$secondary-color;
+	-webkit-font-smoothing: antialiased;
 }
 
 h2 {
-	@extend %hdln-sec;
+	//@extend %hdln-sec;
+	font-size:em(21px);	
+	color:$h2-blue;
+	font-weight: 200;
 }
 
 h3 {
-	@extend %hdln-sec;
+	//@extend %hdln-sec;
+	font-size:em(21px);
+	color:$secondary-color;	
 }
 
 h4 {
@@ -58,11 +69,8 @@ h5 {
 }
 
 body {
-	font-family: $heading-font;
 	font-size: $base__font-size;
 	line-height: ($base__line/$base__font-size);
-	-web-kit-font-smoothing: antialiased;
-	font-smoothing: antialiased;	
 }
 ol, ul {
 	margin:0;
@@ -85,19 +93,4 @@ table {
 p{
 	//baseline grid of bootstrap is 21px
 	margin-bottom:em(21px);
-}
-
-a{
-	color:$cinnabar;
-	text-decoration:none;
-
-	&:hover {
-		color:$link-hover;
-		text-decoration:none;
-	}
-}
-
-.container {
-	padding-left:0;
-	padding-right:0;
 }

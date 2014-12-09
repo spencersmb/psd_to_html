@@ -3,28 +3,28 @@
 // ==========================================================================
 
 
-%hdln-prim{
-  font-family: $font-family--primary;
-  //font-weight: $font-weight--medium;
-  font-size: 36px;
-  //desired line height divided by font size in px
-  //line-height: 1.5em;
-  //desired margine in px / font size of h1
-  //margin-bottom: em(70px, 42px);
-  //using map get function twice to get nested value
-  //map-get(map-get($palettes, grey), x-dark);
-  color: $secondary-color;
-  //margin-top:0;
-}
+// %hdln-prim{
+//   font-family: $font-family--primary;
+//   //font-weight: $font-weight--medium;
+//   font-size: 36px;
+//   //desired line height divided by font size in px
+//   //line-height: 1.5em;
+//   //desired margine in px / font size of h1
+//   //margin-bottom: em(70px, 42px);
+//   //using map get function twice to get nested value
+//   //map-get(map-get($palettes, grey), x-dark);
+//   color: $secondary-color;
+//   //margin-top:0;
+// }
 
-%hdln-sec{
-  font-family: $font-family--primary;
-  //font-weight: $font-weight--thin;
-  font-size: em(21px);
-  color: $h2-blue;
-  //line-height: (42px / 21px);
-  //letter-spacing: $letter-space;
-}
+// %hdln-sec{
+//   font-family: $font-family--primary;
+//   //font-weight: $font-weight--thin;
+//   font-size: em(21px);
+//   color: $h2-blue;
+//   //line-height: (42px / 21px);
+//   //letter-spacing: $letter-space;
+// }
 
 // .headline {
 

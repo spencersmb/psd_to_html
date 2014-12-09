@@ -10,15 +10,16 @@
 
 	h1{
 		color:$white;
-		font-size: em(42px);
-		line-height: em(80px,42px);
-		@include letterpress( 1px, 1px, 1px, rgba(0,0,0, 0.5));
+		// font-size: em(42px);
+		// line-height: em(80px,42px);
+		font-size:em(36px);	
+		text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
 	}
 	h2{
 		color:$third-color;
 		font-size:em(26px);
 		line-height: em(42px,42px);
-		@include letterpress( 1px, 1px, 1px, rgba(0,0,0, 0.5));
+		text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
 		margin-bottom: em(5px);
 	}
 

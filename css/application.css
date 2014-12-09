@@ -8,8 +8,8 @@ Author URL: http://www.everytuesday.com/
 Version: 1.0.0
 
 *********************************************************/
-@import url("http://fonts.googleapis.com/css?family=Cabin:400,600,700,400italic,600italic,700italic");
-@import url("http://fonts.googleapis.com/css?family=Gentium+Basic:400,400italic");
+@import url("http://fonts.googleapis.com/css?family=Cabin");
+@import url("http://fonts.googleapis.com/css?family=Gentium+Basic");
 @font-face {
   font-family: 'Glyphicons Halflings';
   src: url("../fonts/bootstrap/glyphicons-halflings-regular.eot");
@@ -4057,6 +4057,8 @@ time, mark, audio, video {
   font-size: 100%;
   font: inherit;
   vertical-align: baseline;
+  font-family: helvetica;
+  font-weight: normal;
 }
 
 /* HTML5 display-role reset for older browsers */
@@ -4065,22 +4067,37 @@ footer, header, hgroup, menu, nav, section {
   display: block;
 }
 
+h1 {
+  font-size: 2.57143em;
+  font-family: "Cabin", Helvetica, Arial, sans-serif;
+  color: #3b5568;
+  -webkit-font-smoothing: antialiased;
+}
+
+h2 {
+  font-size: 1.5em;
+  color: #6694b4;
+  font-weight: 200;
+}
+
+h3 {
+  font-size: 1.5em;
+  color: #3b5568;
+}
+
 h4 {
-  font-family: "Cabin", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Cabin", Helvetica, Arial, sans-serif;
   font-size: 1.14286em;
 }
 
 h5 {
-  font-family: "Cabin", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Cabin", Helvetica, Arial, sans-serif;
   font-size: 1em;
 }
 
 body {
-  font-family: "Cabin", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 14px;
   line-height: 1.5;
-  -web-kit-font-smoothing: antialiased;
-  font-smoothing: antialiased;
 }
 
 ol, ul {
@@ -4106,20 +4123,6 @@ table {
 
 p {
   margin-bottom: 1.5em;
-}
-
-a {
-  color: #ea492c;
-  text-decoration: none;
-}
-a:hover {
-  color: palettes(gray);
-  text-decoration: none;
-}
-
-.container {
-  padding-left: 0;
-  padding-right: 0;
 }
 
 .top__header, .list-top-contact {
@@ -4150,22 +4153,24 @@ a:hover {
   padding-right: 1.5em;
 }
 
-h1 {
-  font-family: "Cabin", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 36px;
-  color: #3b5568;
+a {
+  color: #ea492c;
+  text-decoration: none;
+}
+a:hover {
+  color: palettes(gray);
+  text-decoration: none;
 }
 
-h2, h3 {
-  font-family: "Cabin", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 1.5em;
-  color: #6694b4;
+.container {
+  padding-left: 0;
+  padding-right: 0;
 }
 
 .btn__top-header, .btn__form {
   display: inline-block;
   padding: 0 1em;
-  font-family: "Cabin", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Cabin", Helvetica, Arial, sans-serif;
   background-image: -webkit-linear-gradient(top, #ea492c 0%, #e63617 100%);
   background-image: -o-linear-gradient(top, #ea492c 0%, #e63617 100%);
   background-image: linear-gradient(to bottom, #ea492c 0%, #e63617 100%);
@@ -4270,15 +4275,14 @@ h2, h3 {
 }
 .section-main-form h1 {
   color: white;
-  font-size: 3em;
-  line-height: 1.90476em;
-  text-shadow: 1px, 1px, 1px, rgba(0, 0, 0, 0.5);
+  font-size: 2.57143em;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
 }
 .section-main-form h2 {
   color: #3694b7;
   font-size: 1.85714em;
   line-height: 1em;
-  text-shadow: 1px, 1px, 1px, rgba(0, 0, 0, 0.5);
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
   margin-bottom: 0.35714em;
 }
 
@@ -4294,7 +4298,7 @@ h2, h3 {
   padding: 0 7.57143em 0 1.5em;
   outline: none;
   border: none;
-  font-family: "Cabin", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Cabin", Helvetica, Arial, sans-serif;
   border-radius: 3px;
   -moz-border-radius: 3px;
   -webkit-border-radius: 3px;
@@ -4318,10 +4322,11 @@ h2, h3 {
 
 blockquote.top, blockquote.left {
   font-family: "Gentium Basic", Georgia, Serif;
-  font-size: 1.5em;
+  font-size: 21px;
   line-height: 1.5em;
   color: #2894d8;
   font-style: italic;
+  font-weight: 100;
   position: relative;
 }
 
@@ -4337,10 +4342,10 @@ blockquote.top cite {
 blockquote.top {
   margin: 0 auto;
   width: 50%;
-  text-shadow: 1px, 1px, 1px, rgba(0, 0, 0, 0.5);
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
 }
 blockquote.top cite {
-  text-shadow: 1px, 1px, 1px, rgba(0, 0, 0, 0.5);
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
 }
 blockquote.top::before {
   position: absolute;
