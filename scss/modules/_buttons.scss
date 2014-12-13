@@ -37,17 +37,33 @@
 
 }
 
+.logo__container--mobile{
+	
+	@include mq(x-small){
+		width:100%;
+		text-align: center;
+		float:none;
+
+		}
+
+}
 
 
 .btn{
 
-	@include e(top-header){
-		@include pull(right);
+	@include e(start){
 		@extend %btn;
 		margin-top:em(10.5px);
 		height:em(42px);
 		line-height:em(42px);
 		font-weight:bold;
+		float:right;
+
+		@include mq(x-small){
+			float:none;
+		}
+
+
 	}
 
 	@include e(form){
@@ -56,5 +72,65 @@
 		line-height:em(42px);
 		font-size: em(14px);
 		font-weight:bold;
+
+		@include mq(x-small){
+			display: none;
+		}
+	}
+
+}
+
+
+.slick-prev, .slick-next { 
+
+	position: relative;
+	display: inline-block !important; 
+	height: 42px; 
+	width: 42px; 
+	line-height: 0; 
+	font-size: 0; 
+	cursor: pointer; 
+	background: transparent; 
+	color: $cinnabar ; 
+	//margin-top: -10px; 
+	padding: 0; 
+	border: none; 
+	outline: none;
+	background: url('../images/sprites.png');
+	margin-top:30px;
+
+	@include mq(small){
+		display: block !important; 
+		position: absolute; 
+		top: 40%; 
 	}
 }
+
+.slick-prev{
+
+		background-position:0px -128px;
+		//margin-left: 20px; 
+
+	@include mq(small){
+		
+		left:-13%; 
+	}
+	
+}
+
+.slick-next{
+
+		background-position:-64px -128px;
+		margin-left: 20px; 
+
+	@include mq(small){
+		
+		right:-13%;
+	}
+}
+
+
+
+
+
+

@@ -3,7 +3,7 @@
 <!--[if !IE]><!--> <html lang="en"> <!--<![endif]-->
 
 <head>
-	<meta charset="utf-8">
+	<meta http-equiv="Content-Type" content="text/html" charset="utf-8">
 	<title>Business Landing Page</title>
 	<meta name="description" content="A simple landing page made for Tuts+ Premium">
 	<meta name="author" content="Spencer Bigum">
@@ -13,6 +13,8 @@
 
 	<!-- Stylesheets -->
 	<link rel="stylesheet" href="css/application.css" />
+
+	<link rel="stylesheet" type="text/css" href="slick/slick.css"/>
 
 	<!--[if lt IE 9]>
 		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
@@ -34,7 +36,7 @@
 			<!-- div.row>div.span3+div.span9 -->
 			<div class="row">
 
-				<div class="col-md-4">
+				<div class="col-sm-12 col-md-3 col-lg-4 ">
 
 					<!-- use h1 for seo --> 
 					<h1 class='logo'>
@@ -43,16 +45,16 @@
 
 				</div> <!-- end col-3 -->
 
-				<div class="col-md-8">	
+				<div class="col-sm-12 col-md-9 col-lg-8 logo__container--mobile">	
 					<!-- place button first due to float issue -->
-					<a href="#" class="btn__top-header" role="button">Get Started for Free <span class="icn__small--arrow-right"></span></a>
+					<a href="#" class="btn__start " role="button">Get Started for Free <span class="icn__small--arrow-right"></span></a>
 
 					<ul class="list-top-contact">
 
 						<li>
 							<span class="icn__small--phone"></span> Call us: 1800-bus-iness
 						</li>
-						<li>
+						<li> 
 							<span class="icn__small--envelope"></span>
 							<a href="mailto:office@mycompany.com">office@mycompany.gmail.com</a>
 							
@@ -83,7 +85,7 @@
 				<form action="/" method="post" class="form__single">
 					<p>
 						<input type="email" name="form-email" id="form-email" placeholder="Enter email"/>
-						<input type="submit" value="Start Now" class="btn__form"/>
+						<input type="submit" value="Start Now" class="btn__form hidden-xs"/>
 					</p>
 				</form>
 
@@ -113,35 +115,57 @@
 
 
 				<div class="row">
-					<ul class="list__features">
-						<li class="col-md-4">
-							<header>
-								<span class="icn__big--ecommerce"></span>
-								<h3>This is a nice little feature title with two lines of copy in it.</h3>
-							</header>
+					<div class="col-md-4">
 
-							<p>And it’s followed by some description text. You’ll want to keep this simple and to the point.</p>
-						</li>
+						<ul class="list__features2">
+							<li>
+								<header>
+									<span class="icn__big--ecommerce"></span>
+									<h3>This is a nice little feature title</h3>
+								</header>
 
-						<li class="col-md-4">
-							<header>
-								<span class="icn__big--books"></span>
-								<h3>This is a nice little feature title with two lines of copy in it.</h3>
-							</header>
+								<p>And it’s followed by some description text. You’ll want to keep this simple and to the point.</p>
+							</li>
+						</ul>
+							
+					</div>
 
-							<p>And it’s followed by some description text. You’ll want to keep this simple and to the point.</p>
-						</li>
+					<div class="col-md-4">
 
-						<li class="col-md-4">
-							<header>
-								<span class="icn__big--settings"></span>
-								<h3>This is a nice little feature title</h3>
-							</header>
+					<ul class="list__features2">
+							<li>
+								<header>
+									<span class="icn__big--books"></span>
+									<h3>This is a nice little feature title</h3>
+								</header>
 
-							<p>And it’s followed by some description text. You’ll want to keep this simple and to the point.</p>
-						</li>
-					</ul>
+								<p>And it’s followed by some description text. You’ll want to keep this simple and to the point.</p>
+							</li>
+						</ul>
+							
+					</div>
+
+					<div class="col-md-4">
+
+					<ul class="list__features2">
+							<li>
+								<header>
+									<span class="icn__big--settings"></span>
+									<h3>This is a nice little feature title</h3>
+								</header>
+
+								<p>And it’s followed by some description text. You’ll want to keep this simple and to the point.</p>
+							</li>
+						</ul>
+							
+					</div>
+
 				</div> <!-- end row -->
+
+
+
+
+
 
 				<a href="#top" class="link__top">- Go Top -</a>
 
@@ -255,7 +279,7 @@
 
 				<div class="row">
 				
-					<div class="col-md-5">
+					<div class="col-sm-12 col-md-5">
 						
 						<blockquote class="left">
 							I bought this a while ago and wow... it’s just awesome. Well built, beautiful to look at, a really premium landing page.
@@ -265,7 +289,7 @@
 						</blockquote>
 
 					</div> <!-- end col-5 -->
-					<div class="col-md-7">
+					<div class="col-sm-12 col-md-7 clients-mobile">
 						
 						<ul class="list__clients">
 							
@@ -336,7 +360,14 @@
 				<h1>This is an image gallery</h1>
 				<h2>Use the controls on the sides to navigate.</h2>
 
-				<p>This is where the gallery will be</p>
+				
+			<div class="single-slider">
+				<div class="gallery__slider">
+				  <div><img class="img-responsive" src="images/gallery/Homepage.png" alt="Client Logo"></div>
+				  <div><img class="img-responsive" src="images/clients/client-logo-10.png" alt="Client Logo"></div>
+				  <div><img class="img-responsive" src="images/clients/client-logo-9.png" alt="Client Logo"></div>
+				</div>
+			</div>
 
 				<a href="#top" class="link__top">- Go Top -</a>
 				
@@ -356,7 +387,7 @@
 				
 				<h1>Free trial. Get started in under a minute.</h1>
 				<h2>No credit card required.</h2>
-				<a href="" class="btn">Get Started for Free <span class="icn__small--arrow-right"></span></a>
+				<a href="" class="btn__start" role="button">Get Started for Free <span class="icn__small--arrow-right"></span></a>
 
 				<hr />
 
@@ -382,7 +413,7 @@
 					<ul class="list__footer">
 						<li><a href="">Terms of Service</a>&nbsp;&nbsp;&bull;&nbsp;&nbsp;</li>
 						<li><a href="">Privacy Policy</a>&nbsp;&nbsp;&bull;&nbsp;&nbsp;</li>
-						<li><a href="">Site Map</a>&nbsp;&nbsp;&bull;&nbsp;&nbsp;</li>
+						<li><a href="">Site Map</a></li>
 					</ul>
 				</div> <!-- end col-4 -->
 
@@ -399,12 +430,12 @@
 
 				<div class="col-md-5">
 
-					<ul class="list__social">
+					<ul class="list__social pull-right">
 						
-						<li><a href="" class="twitter"></a></li>
-						<li><a href="" class="facebook"></a></li>
-						<li><a href="" class="google"></a></li>
-						<li><a href="" class="linkedin"></a></li>
+						<li><a href="" class="icn__twitter">Twitter</a></li>
+						<li><a href="" class="icn__facebook">Facebook</a></li>
+						<li><a href="" class="icn__googleplus">Google</a></li>
+						<li><a href="" class="icn__linkedin">LinkedIn</a></li>
 
 					</ul>
 					
@@ -419,6 +450,14 @@
 	<!-- JavaScript -->
 	<script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
 	<script src="js/bootstrap.js"></script>
+	<script type="text/javascript" src="slick/slick.min.js"></script>
+	<script type="text/javascript">
+				$(document).ready(function(){
+			$('.gallery__slider').slick({
+			 // setting-name: setting-value
+			});
+		});
+	</script>
 
 </body>
 </html>

@@ -1,3 +1,8 @@
+// ==========================================================================
+// Base styles
+// ==========================================================================
+
+
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -97,6 +102,8 @@ a{
 }
 
 .container {
-	padding-left:0;
-	padding-right:0;
+
+	@include mq(x-small){
+		padding:0 em(28px);
+	}
 }

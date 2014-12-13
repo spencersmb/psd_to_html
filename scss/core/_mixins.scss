@@ -48,3 +48,35 @@
 @mixin letterpress($x: 0, $y: 0, $blur: 1px, $color: #000){
     text-shadow:$x, $y, $blur, $color;
 }
+
+//media quries
+@mixin mq($screen-size) {
+  @if $screen-size == "xx-small" {
+    @media (min-width: 1px) and (max-width: $x-small) {
+      @content;
+    }
+  }
+  @else if $screen-size == "x-small" {
+    @media (min-width: 1px) and (max-width: $small) {
+      @content;
+    }
+  }
+  @else if $screen-size == "small" {
+    @media (min-width: $small + 1) {
+      @content;
+    }
+  }
+  @else if $screen-size == "medium" {
+    @media (min-width: $medium + 1) {
+      @content;
+    }
+  }
+  @else if $screen-size == "large" {
+    @media (min-width: $large){ 
+      @content;
+    }
+  }
+  @else {
+    @error "Wrong break-point value for '#{$screen-size}'";
+  }
+}

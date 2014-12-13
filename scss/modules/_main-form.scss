@@ -11,13 +11,13 @@
 	h1{
 		color:$white;
 		font-size: em(42px);
-		line-height: em(80px,42px);
+		line-height: 1.5em;
 		@include letterpress( 1px, 1px, 1px, rgba(0,0,0, 0.5));
 	}
 	h2{
 		color:$third-color;
 		font-size:em(26px);
-		line-height: em(42px,42px);
+		line-height: 1.5em;
 		@include letterpress( 1px, 1px, 1px, rgba(0,0,0, 0.5));
 		margin-bottom: em(5px);
 	}
@@ -52,8 +52,18 @@
 	//Set P tag to relative and input element inside to absolute.
 	> p {
 		margin:0 auto;
-		width:50%;
+		width:70%;
 		position: relative;
+
+		@include mq(small){
+			width:70%;
+		}
+
+		@include mq(medium){
+			width:50%;
+		}
+
+		
 
 		input[type="submit"]{
 			position: absolute;
@@ -65,5 +75,7 @@
 			-web-kit-font-smoothing: antialiased;
 			font-smoothing: antialiased;
 		}
+
+		
 	}
 }

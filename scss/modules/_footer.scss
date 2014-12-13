@@ -1,0 +1,30 @@
+// ==========================================================================
+// Footer
+// ==========================================================================
+
+.site__footer{
+	padding-bottom: em(63px);
+}
+
+.list__footer,
+.list__social{
+	li{
+		float: left;
+	}
+}
+
+.list__social{
+
+	li{
+		margin-left:em(15px);
+	}
+
+		a{
+		height:35px;
+		width:35px;
+		display:block;
+		@include text-hide();
+		}
+	
+}
+

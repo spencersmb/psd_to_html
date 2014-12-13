@@ -11,7 +11,11 @@
 	h1{
 		font-size: em(36px);
 		color: $white;
-		line-height: 84px;
+
+		@include mq(x-small){
+			line-height: 1.25em;
+			padding-bottom: em(10px);
+		}
 	}
 }
 

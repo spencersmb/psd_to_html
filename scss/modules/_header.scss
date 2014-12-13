@@ -14,9 +14,22 @@
 .logo{
 
 	a{
-		@include img-replace("logo.png", 63px, 100%);
-		background-position:left center;
 		@include text-hide();
+		@include img-replace("logo.png", 63px, 100%);
+
+		@include mq(medium){
+			background-position:left center;
+		}
+
+		@include mq(small){
+			background-position:center center;
+		}
+
+		@include mq(x-small){
+			background-position:center center;
+		}
+
+
 	}
 }
 
@@ -24,12 +37,26 @@
 	@include pull(right);
 	@extend %top__space;
 
+	@include mq(x-small){
+			float: none;
+			width:100%;
+			text-align: center;
+		}
+
 	li{
 		float:left;
 		border-right: 1px dotted palette(grey);
 		margin-right:em(21px);
 		padding-right:em(21px);
+
+		@include mq(x-small){
+			float: none;
+			border-right:none;
+			margin-right:0;
+			padding-right:0;
+		}
 	}
+	
 	
 
 }

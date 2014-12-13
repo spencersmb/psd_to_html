@@ -4,15 +4,8 @@
 .section__features{
 	background: url("../images/pattern-light.jpg");
 	text-align:center;
-	padding:em(90px) 0 ;
+	padding:em(60px) 0 ;
 	@include clearfix;
-	h1{
-
-	}
-
-	h2{
-
-	}
 
 }
 
@@ -43,6 +36,33 @@
 				@include translateY(-75%);
 				width:340px;
 				line-height: em(18px);
+			}
+			
+		}
+
+		> p {
+			//padding-top: 70px;
+		}
+	}
+}
+
+.list__features2 {
+	margin:em(64px) 0 em(44px) 0;
+	@include clearfix;
+
+	li{
+		background:$white;
+		border: 1px solid palette(grey, x-light);
+		@include round(3px);
+		@include box-shadow(0 0 5px 0 rgba(0,0,0, 0.1));
+		padding: em(33px) em(21px) em(21px) em(21px);	
+
+		header{
+
+			h3{
+
+				line-height: em(18px);
+				padding-bottom:em(10px);
 			}
 			
 		}

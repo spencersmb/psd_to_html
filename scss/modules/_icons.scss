@@ -15,8 +15,12 @@
 	width:42px;
 	height:42px;
 	margin: 0 em(10.5px) -3px 0;
-	background: url('../images/sprites.png');
+	background: url('../images/sprites.png');	
 	margin-bottom:10px;
+}
+
+%social{
+	background: url('../images/sprites.png');
 }
 
 
@@ -53,5 +57,32 @@
 		}
 
 	}
+
+	@include e(twitter) {
+		@extend %social;
+		background-position:0px -192px;
+	}
+
+	@include e(linkedin) {
+		@extend %social;
+		background-position:-64px -192px;
+	}
+
+	@include e(googleplus) {
+		@extend %social;
+		background-position:-128px -192px;
+	}
+
+	@include e(facebook) {
+		@extend %social;
+		background-position:-192px -192px;
+	}
 	
 }
+
+
+
+
+
+
+

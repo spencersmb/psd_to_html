@@ -1,0 +1,29 @@
+// ==========================================================================
+// Gallery Section
+// ==========================================================================
+
+.section__gallery{
+	background: url("../images/pattern-light.jpg");
+	text-align:center;
+	padding:em(60px) 0 ;
+	@include clearfix;
+
+	h1{
+		font-size: em(36px);
+	}
+}
+
+.single-slider{
+	margin: 43px auto;
+	text-align: center;
+	width:100%;
+	max-width:600px;
+	position: relative;
+	@include clearfix;
+
+	
+}
+
+.galler__slider{
+	margin: 0 auto;
+}

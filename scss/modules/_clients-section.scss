@@ -9,8 +9,37 @@
 	padding: em(63px) 0 ;
 
 	h1{
-		line-height: 84px;
+
+		@include mq(x-small){
+			line-height: 1.25em;
+			padding-bottom: em(10px);
+		}
 	}
+
+	blockquote{
+		width:70%;
+		margin: 0 auto;
+
+		@include mq(small){
+			width:80%;
+		}
+		@include mq(medium){
+			width:85%;
+		}
+	}
+
+}
+
+.clients-mobile{
+		display:inline-block;
+		margin: 0 auto;
+		text-align: center;
+		padding-top: em(63px);
+
+		@include mq(medium){
+			padding-top:0;
+		}
+
 }
 
 .list__clients{
@@ -19,9 +48,15 @@
 		display:inline-block;
 		float: left;
 		text-align: left;
-
+		padding-left: 1em;
 		img{
 			margin:0 21px 21px 21px;
+
+			@include mq(x-small){
+			margin:0 10px 21px 0px;
+
 		}
+		}
+
 	}
 }
